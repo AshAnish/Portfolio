@@ -1,0 +1,149 @@
+/* ====== Global Styles ====== */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: #0d1117;  /* Dark Blue Black */
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ====== Navbar ====== */
+.navbar {
+  background: rgba(13, 17, 23, 0.9);
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 215, 0, 0.3);  /* Gold accent */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  color: gold;
+}
+
+/* ====== Hero Section ====== */
+#hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(135deg, #0d1117, #161b22);
+}
+
+#hero h1 {
+  font-size: 3rem;
+  color: gold;
+  font-weight: bold;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* ====== Sections ====== */
+section {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* ====== Buttons ====== */
+button {
+  background: gold;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  font-weight: 600;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background: rgba(255, 215, 0, 0.8);
+}
+
+/* ====== Projects Section ====== */
+.projects-section {
+  text-align: center;
+  padding: 80px 20px;
+  background: #161b22;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  background: rgba(255, 215, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  transition: transform 0.3s ease, background 0.3s ease;
+  text-decoration: none;
+  color: white;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  background: rgba(255, 215, 0, 0.2);
+}
+
+/* ====== Canvas (3D Scene) ====== */
+.canvas {
+  width: 100vw;
+  height: 60vh;
+  display: block;
+}
+
+/* ====== Footer ====== */
+footer {
+  padding: 20px;
+  background: #0d1117;
+  border-top: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+footer p {
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
